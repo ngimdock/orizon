@@ -1,0 +1,209 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Avertastd,sans-serif;
+}
+
+.head-site{
+	width: 64%;
+	margin: 27px auto 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: #fff;
+}
+
+.rigth-head{
+	float: right !important;
+	left: 70%;
+	display: flex;
+	margin-top: 20px;
+}
+
+.rigth-head button{
+	width: 140px;
+	height: 48px;
+	padding: 5px 10px;
+	background: #2b00d4;
+	color: white;
+	border: 0;
+	outline: 0;
+}
+
+.rigth-head button a{
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.page-menu{
+	height: 100vh;
+	width: 50%;
+	position: fixed;
+	right: -100%;
+	top: 0;
+	transition: all .6s;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background: #000b01;
+	color: #fff;
+	z-index: 2;
+	padding-top: 200px;
+	background-image: url("./images/5fff1c3bd19a56e49249ccca_Union (5).svg");
+	background-repeat: no-repeat;
+	background-position: 75% 0%;
+}
+
+.box{
+	background: #fff;
+	width: 50px;
+	height: 45px;
+	box-shadow: 2px 2px 4px gray;
+	position: fixed;
+	right: 250px;
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+label[for="check-menu"]{
+	width: 28px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-top: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.ligne{
+	width: 100%;
+	height: 3px;
+	background:  #2b00d4;
+	position: absolute;
+	transition: all .5s ease-in-out;
+}
+
+.ligne:nth-child(1){
+	top: 0px;
+}
+
+.ligne:nth-child(2){
+	top: 12px;
+}
+
+.ligne:nth-child(3){
+	top: 25px;
+}
+
+.check-menu.active .ligne:nth-child(1){
+	top: 12px;
+	transform: rotate(135deg);
+}
+
+.check-menu.active .ligne:nth-child(2){
+	transform: translateX(-20px);
+	opacity: 0;
+}
+
+.check-menu.active .ligne:nth-child(3){
+	top: 12px;
+	transform: rotate(-135deg);
+}
+
+#check-menu{
+	display: none;
+}
+
+.logo-box{
+	margin-top: 20px;
+	width: 200px;
+}
+
+.logo{
+	widows: 200px;
+	height: auto;
+}
+
+.show-page-menu{
+	right: 0;
+}
+
+.site-menu{
+	width: 70%;
+}
+
+.site-menu ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0 15px;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+main{
+	height: 1700px;
+	background-repeat: no-repeat;
+
+}
+
+.navigation ul li{
+	margin-bottom: 30px;
+	list-style: none;
+}
+
+.navigation ul li a{
+	text-decoration: none;
+	font-size: 30px;
+	color: white;
+}
+
+.lest-talk{
+	width: 100%;
+	height: 60px;
+	margin-top: 10px;
+	background: white;
+	color: black;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px;
+
+}
+
+.lest-talk span{
+	font-size: 18px;
+	font-weight: 700;
+}
+
+
+
+.hiddenElement{
+	display: none;
+}
+
+.hiddenVisibility{
+	visibility: hidden;
+}
+
+/*--------------------------media-query------------------------------*/
+
+@media screen and (max-width : 750px){
+	.page-menu{
+		width: 100%;
+	}
+}
