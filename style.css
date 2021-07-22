@@ -6,6 +6,7 @@
 
 body{
 	font-family: Avertastd,sans-serif;
+	background: gray;
 }
 
 .head-site{
@@ -199,6 +200,12 @@ main{
 .hiddenVisibility{
 	visibility: hidden;
 }
+
+article img{
+	width: 300px;
+	height: auto;
+}
+
 
 /*--------------------------media-query------------------------------*/
 
