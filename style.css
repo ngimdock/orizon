@@ -62,7 +62,7 @@ body{
 	align-items: center;
 	background: #000b01;
 	color: #fff;
-	z-index: 10;
+	z-index: 15;
 	padding-top: 200px;
 	background-image: url("./images/5fff1c3bd19a56e49249ccca_Union (5).svg");
 	background-repeat: no-repeat;
@@ -225,9 +225,10 @@ main{
 	line-height: 70px;
 	font-weight: 500;
 	width: 700px;
+	z-index: 11;
 }
 
-.head-content .left strong span{
+.make{
 	color: #2b00d4;
 }
 
@@ -508,4 +509,25 @@ article img{
 
 .white-line{
 	background: white;
+}
+
+.revel-up{
+	opacity: 0;
+	transform: translateY(-50px);
+}
+
+.revel-down{
+	opacity: 0;
+	transform: translateY(50px);
+}
+
+.revel-right{
+	opacity: 0;
+	transform: translateX(50px);
+}
+
+.revel-visible{
+	opacity: 1;
+	transform: translateY(0);
+	transition: .9s;
 }
