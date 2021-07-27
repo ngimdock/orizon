@@ -1,7 +1,7 @@
 
 const checkMenu = document.querySelector(".check-menu");
 
-/* cette fonction me permet masquer et afficher le menu du site*/
+// cette fontion me permet d'ajouter la class active sur la box qui affiche le menu
 checkMenu.onclick = function() {
 	const pageMenu = document.querySelector(".page-menu");
 	pageMenu.classList.toggle("show-page-menu")
@@ -20,9 +20,10 @@ checkMenu.onclick = function() {
 };
 
 
-/*cette fonction me permet de changer la couler de la boite d'affichage du menu lors du scroll de la fenettre principale*/
-window.onscroll = function(event) {
+//cette fonction me permet de changer la propriété css de la box qui affiche le menu du site
 
+window.onscroll = function(event) {
+	
 	const boxMenu = document.querySelector(".box");
 	const lines = document.querySelectorAll(".ligne");
 	if(this.scrollY > 80){
@@ -35,31 +36,41 @@ window.onscroll = function(event) {
 };
 
 
-/* cette fonction me permet d'afficher les éléments de la page avec des animations lors du scroll de la page*/
 
 
-const handleIntersect = (entries, observer) => {
-	entries.forEach(entry => {
-		if(entry.intersectionRatio >= ratio) {
+const handleDisplay = (entrie, observer) =>  { //méthode à exécuter une fois le ratio d'intersection est atteind
+	entrie.forEach(entry => {
+		if(entry.intersectionRatio > ratio){
 			entry.target.classList.add("revel-visible");
 			observer.unobserve(entry.target);
 		}
-	})
+	} )
 };
 
-const ratio = 0.4;
-
-const options = {  // paramètrage de l'observateur
+let ratio = 0.3
+const options = { //configuration de l'observateur
   root: null,
   rootMargin: '0px',
   threshold: ratio
 }
 
-const observer = new IntersectionObserver(handleIntersect, options); // définition de l'observateur
+const observer = new IntersectionObserver(handleDisplay, options); //création de l'observateur observer
 
-const elementToObservate = document.querySelectorAll(".revel-down, .revel-up, .revel-right");
+const elementToObservate = document.querySelectorAll(".revel-bottom, .revel-top, .revel-right");
 console.log(elementToObservate);
-
 elementToObservate.forEach(elt => {
-	observer.observe(elt); //pour que l'observateur observe l'élément cible
+	observer.observe(elt); //selection de tous les l'éléments à observer(cible)
 })
+
+
+// cette fonction me permet de définir le premier caroucel de la page d'acceuil
+
+
+$('.slider').slick({
+	dots: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  cssEase: 'linear'
+});
