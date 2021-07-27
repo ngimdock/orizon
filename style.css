@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
+
 *{
 	margin: 0;
 	padding: 0;
@@ -62,7 +63,7 @@ body{
 	align-items: center;
 	background: #000b01;
 	color: #fff;
-	z-index: 15;
+	z-index: 10;
 	padding-top: 200px;
 	background-image: url("./images/5fff1c3bd19a56e49249ccca_Union (5).svg");
 	background-repeat: no-repeat;
@@ -202,7 +203,7 @@ main{
 	width: 80%;
 	height: 650px;
 	float: right;
-	margin-top: 40px;
+	margin-top: 90px;
 }
 
 .head-content .left{
@@ -225,10 +226,9 @@ main{
 	line-height: 70px;
 	font-weight: 500;
 	width: 700px;
-	z-index: 11;
 }
 
-.make{
+.head-content .left strong span{
 	color: #2b00d4;
 }
 
@@ -268,6 +268,66 @@ main{
 	text-align: center;
 }
 
+.head-caroucel{
+	height: 33px;
+	overflow: hidden;
+}
+
+/* drapeau étoile feu monde gmap*/
+
+.head-caroucel ul{
+	animation: glisse 15s ease-in-out infinite;
+}
+
+.head-caroucel ul li{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	padding: 5px 0;
+	font-size: 15px;
+    line-height: 15px;
+    color: #0f0928;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+
+.head-caroucel ul li img{
+	height: 20px;
+	width: auto;
+	margin: 0 10px;
+}
+
+@keyframes glisse {
+	0%, 12% {
+		transform: translateY(0);
+	}
+
+	14.2% , 26% {
+		transform: translateY(-30px);
+	}
+
+	28.5%, 40% {
+		transform: translateY(-60px);
+	}
+
+	42.8%, 54% {
+		transform: translateY(-90px);
+	}
+
+	57.1%, 69% {
+		transform: translateY(-120px);
+	}
+
+	71.4%, 83% {
+		transform: translateY(-150px);
+	}
+
+	86%, 100% {
+		transform: translateY(-180px);
+	}
+}
+
 
 .presentation-section{
 	clear: right;
@@ -287,7 +347,7 @@ main{
 	position: absolute;
 	left: 0;
 	padding:0 auto;
-	margin-top: 80px;
+	margin-top: 95px;
 }
 
 .intro p{
@@ -300,7 +360,7 @@ main{
 }
 
 .fatured{
-	margin-top: 320px;
+	margin-top: 430px;
 	position: absolute;
 	right: 0;
 	font-family: 'Nunito', sans-serif;
@@ -310,7 +370,7 @@ main{
 }
 
 .article-container{
-	margin-top: 300px;
+	margin-top: 390px;
 }
 
 
@@ -456,17 +516,18 @@ article img{
 	margin-right: 17px;
 }
 
+
 .view-all a{
 	width: 140px;
 	height: 48px;
 	display: flex;
-	border: 1px solid gray;
+	border: 2px solid rgba(102,95,130,.1) !important;
 }
 
 .view{
 	width: 70%;
 	height: 100%;
-	border-right: 1px solid gray;
+	border-right: 2px solid rgba(102,95,130,.1) !important;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -479,6 +540,331 @@ article img{
 	display: flex;
 	justify-content: center !important;
 	align-items: center;
+}
+
+.separator-line{
+	width: 62%;
+	height: 2px;
+	background-color: rgba(102,95,130,.1);
+	margin: 0 auto;
+}
+
+.clients-section{
+	width: 65%;
+	height: 900px;
+	margin: 180px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.images-box{
+	width: 90%;
+	display: flex;
+	margin: 0 auto 0 auto;
+}
+
+.images-box div img{
+	width: 170px;
+	height: 45px;
+}
+
+.small-logo{
+	padding: 12px 40px;
+}
+
+.small-logo:nth-child(2){
+	border-left: 2px solid rgba(102,95,130,.1);
+	border-right: 2px solid rgba(102,95,130,.1);
+}
+
+.small-logo:nth-child(3){
+	border-right: 2px solid rgba(102,95,130,.1);
+}
+
+.smile-box{
+	min-width: 200px;
+	width: 60%;
+	margin: 0 auto;
+	height: 260px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.clients-section{
+}
+
+.clients-section .trusted{
+	font-family: 'Otomanopee One', sans-serif;
+    color: #0f0928;
+    font-size: 58px;
+    letter-spacing: 1px;
+    line-height: 70px;
+    font-weight: 500;
+    width: 700px;
+    border-left: 5px solid #2b00d4;
+	padding-left: 30px;
+}
+
+.clients-section .trusted span{
+	color: #2b00d4;
+}
+
+.notTo-box{
+	padding-left: 30px;
+	border-left: 5px solid #2b00d4;
+}
+.notTo{
+	font-size: 26px;
+    line-height: 42px;
+    color: #0f0928;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    max-width: 640px;
+}
+
+.why-orizon{
+	width: 100%;
+	height: 1500px;
+	background-color: #120427;
+	color: white !important;
+	background-image: url("./images/5fff1c3bd19a56e49249ccca_Union (5).svg");
+	background-repeat: no-repeat;
+	background-position: 96% 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.why-orizon > div{
+	height: 1300px;
+	width: 68%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.img-workers-box{
+	width: 90%;
+	height: 450px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+.img-workers-box img{
+	width: 100%;
+}
+
+.why-orizon h3{
+	font-family: 'Otomanopee One', sans-serif;
+    color: white;
+    font-size: 58px;
+    letter-spacing: 1px;
+    line-height: 70px;
+    font-weight: 500;
+    width: 700px;
+}
+
+.deuxieme{
+	color: #594b6f;
+}
+
+.slider-box{
+	height: 350px;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.slider-box div{
+	display: flex;
+}
+
+.slider-box div h3{
+	font-size: 32px;
+	line-height: 37px;
+	font-weight: 700px;
+	font-family: 'Otomanopee One', sans-serif;
+	padding-left: 40px;
+}
+
+.slider-box p{
+	   font-size: 26px;
+    line-height: 42px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    max-width: 640px;
+    position: relative;
+    top: 63px;
+    font-weight: 600;
+}
+
+.app{  
+	width: 110px !important;
+	height: auto !important;
+}
+
+.reviews{
+	width: 65%;
+	margin: 150px auto 0 auto;
+}
+
+.reviews h3{
+		font-family: 'Otomanopee One', sans-serif;
+	  color: #0f0928;
+    font-size: 58px;
+    letter-spacing: 1px;
+    line-height: 70px;
+    font-weight: 500;
+    width: 700px;
+}
+
+.reviews h3 span{
+	display: block;
+	color: #2b00d4;
+}
+
+.reviews .top-box{
+	margin-top: 90px;
+}
+
+.top-boxv{
+	margin-top: 100px;
+}
+
+.top-boxv .person-view{
+	width: 100%;
+	height: 480px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.img-box{
+	width: 370px !important;
+	height: 100% !important;
+}
+
+.reviews img{
+	width: 100px;
+	height: 100px;
+}
+
+[src *= "./images/quotation-marks.png"]{
+	width: 36px !important;
+	height: auto !important;
+}
+
+[alt *= "person"]{
+	width: 100% !important;
+	height: 100% !important;
+}
+
+
+.details{
+	padding-top: 35px;
+	width: calc(100% - 495px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.details > p{
+	    font-size: 26px;
+    line-height: 42px;
+    color: #0f0928;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    max-width: 640px;
+}
+
+.person-desc{
+		font-size: 18px;
+    line-height: 20px;
+    color: #0f0928;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    max-width: 640px;
+}
+
+.bottom-boxv{
+	width: 70%;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	margin: 200px auto 0 auto;
+	background-image: url("./images/5ff4e69be642499100301f07_Union.svg");
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+
+.bgc p{
+	width: 85%;
+	margin: 80px auto 0 auto;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.bgc p span:first-child{
+	  margin-bottom: 0;
+    color: #0f0928;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 900;
+    display: block;
+}
+
+.bgc p span:last-child{
+	  color: #2b00d4;
+    font-size: 68px;
+    line-height: 78px;
+    font-weight: 900;
+}
+
+.bottom-boxv p{
+		text-align: center;
+    color: #0f0928;
+    font-size: 26px;
+    line-height: 42px;
+    font-weight: 400;
+}
+
+footer{
+	width: 70%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	margin: 170px auto 100px auto;
+  font-family: 'Nunito', sans-serif;
+
+
+}
+
+footer > div{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+footer li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 17px;
+}
+
+.droit{
+	margin-right: 25px;
+}
+
+footer li:first-child{
+	margin-left: 0;
 }
 
 /*--------------------------media-query------------------------------*/
@@ -511,14 +897,14 @@ article img{
 	background: white;
 }
 
-.revel-up{
-	opacity: 0;
-	transform: translateY(-50px);
-}
-
-.revel-down{
+.revel-bottom{
 	opacity: 0;
 	transform: translateY(50px);
+}
+
+.revel-top{
+	opacity: 0;
+	transform: translateY(-50px);
 }
 
 .revel-right{
@@ -529,5 +915,37 @@ article img{
 .revel-visible{
 	opacity: 1;
 	transform: translateY(0);
-	transition: .9s;
+	transition: .8s;
+}
+
+
+.slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.img-div {
+  width: 300px;
+  height: 300px;
+  margin: 0 15px;
+}
+
+.div1 {
+  background: url(https://source.unsplash.com/600x700) center no-repeat;
+  background-size: cover;
+}
+
+.div2 {
+  background: url(https://source.unsplash.com/500x600) center no-repeat;
+  background-size: cover;
+}
+
+.div3 {
+  background: url(https://source.unsplash.com/1200x900) center no-repeat;
+  background-size: cover;
+}
+
+.div4 {
+  background: url(https://source.unsplash.com/400x800) center no-repeat;
+  background-size: cover;
 }

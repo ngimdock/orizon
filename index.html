@@ -3,12 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>orizon</title>
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
 	<link rel="stylesheet" href="./style.css">
+
+	<title>orizon</title>
 </head>
 <body>
-	<header class="head-site revel-up">
-		<div class="logo-box">
+	<header class="head-site">
+		<div class="logo-box revel-top">
 			<img src="./images/logo.svg" alt="LOGO" class="logo">
 		</div>
 
@@ -23,10 +30,16 @@
 
 			<div class="toggleMenu">
 				<p>Have a projets for us?</p>
-				<p class="lest-talk"> 
-					<span>Let's talk</span> 
-					<span class="tof"><a href="#"><img src="./images/6000ec8861c8a536e88603bc_arrow right.svg" src="click to talk"></a></span>
-				</p>
+				<div class="lest-talk">
+					<a href="#">
+						<div class="view">
+							<span>VIEW ALL</span>
+						</div>
+						<div class="fleche">
+							<img src="./images/6000ec8861c8a536e88603bc_arrow right.svg" alt="follow">
+						</div>
+					</a>
+				</div>
 			</div>
 
 			<div class="site-menu">
@@ -44,9 +57,9 @@
 		</nav>
 
 		<div class="rigth-head">
-			<button class="contact-us"><a href="#">CONTACT US</a></button>
+			<button class="contact-us revel-top"><a href="#">CONTACT US</a></button>
 
-			<div class="box">
+			<div class="box revel-top">
 				<label for="check-menu" class="check-menu">
 					<div class="ligne"></div>
 					<div class="ligne"></div>
@@ -59,19 +72,26 @@
 
 	</header>
 
-	<main>
+	<main style="backgound-color: red;">
 		<section class="head-content">
 			<div class="left">
-				<ul>
-					<li>SMILE-CENTERED DESIGN <img src="./images/60ab9a0344168d5e49b321a9_Book a pro, get phot.png" alt="emogie"> </li>
-				</ul>
-
-				<strong class="revel-up">
-					<span class="make">We make</span> apps,<br>
+				<div class="head-caroucel">
+					<ul>
+						<li>SMILE-CENTERED DESIGN <img src="./images/60ab9a0344168d5e49b321a9_Book a pro, get phot.png" alt="emogie"> </li>
+						<li>SMILE-CENTERED DESIGN <img src="./images/5ffde9ab119999744c17fa6e_Book a pro, get phot.png" alt="emogie"> </li>
+						<li>SMILE-CENTERED DESIGN <img src="./images/drapeau.png" alt="emogie"> </li>
+						<li>SMILE-CENTERED DESIGN <img src="./images/etoile.png" alt="emogie"> </li>
+						<li>SMILE-CENTERED DESIGN <img src="./images/flame.png" alt="emogie"> </li>
+						<li>SMILE-CENTERED DESIGN <img src="./images/monde.png" alt="emogie"> </li>
+						<li><img src="./images/5ff5d56a2704427bf8241cd7_Group 116044839.svg" alt="emogie">SMILE-CENTERED DESIGN </li>
+					</ul>
+				</div>
+				<strong class="revel-top">
+					<span>We make</span> apps,<br>
 					websites & brands
 				</strong>
 
-				<div class="video-box revel-down">
+				<div class="video-box revel-bottom">
 					<a href="#">
 						<p class="pVideo">
 							<video controls width="120">
@@ -89,17 +109,17 @@
 				</div>
 			</div>
 
-			<img src="./images/5f3e86ec1b7ab671f36ebd22_5d27a41e529b677f4874f349_Group 3.png" alt="photo-principale" class="revel-down">
+			<img src="./images/5f3e86ec1b7ab671f36ebd22_5d27a41e529b677f4874f349_Group 3.png" alt="photo-principale" class="revel-bottom">
 		</section>
 
 		<section class="presentation-section">
-			<div class="intro">
+			<div class="intro revel-bottom">
 				<p>
 					Orizon is a leading design agency based in Canada. We help startups & Fortune 500 companies delight  humans on the other side of the screen.
 				</p>
 			</div>
 
-			<div class="fatured">
+			<div class="fatured revel-bottom">
 				<p>
 					FEATURED PROJECTS				
 				</p>
@@ -110,13 +130,13 @@
 				<article class="article1">
 					<a href="#">
 						<div class="aLeft">
-							<h1><img src="./images/talent.png" alt="talen-image" class="revel-down"></h1>
-							<p class="revel-down">
+							<h1><img src="./images/talent.png" alt="" class="revel-bottom"></h1>
+							<p class="revel-bottom">
 								Rebranding and generating exponential user growth poses challenges.
 								That's why Neuvoo, one of the world's largest job sites, chose Orizon to seamlessly transition 
 								their brand to Talent.com and elevate their user experience.
 							</p>
-							<div class="revel-down">
+							<div class="revel-bottom">
 								<button class="btn-article">BRAND</button>
 								<button class="btn-article">WEB</button>
 								<button class="btn-article">IOS</button>
@@ -124,7 +144,7 @@
 							</div>
 						</div>
 
-						<div class="aRigth ">
+						<div class="aRigth">
 							<img src="./images/pc.png" alt="pc-image" class="revel-right">
 						</div>
 					</a>
@@ -133,11 +153,11 @@
 				<article class="article2">
 					<a href="#">
 						<div class="aLeft">
-							<h1><img src="./images/logwalk.png" alt="logwalk-pic" class="revel-down"></h1>
-							<p class="revel-down">
+							<h1><img src="./images/logwalk.png" alt="logwalk-pic" class="revel-bottom"></h1>
+							<p class="revel-bottom">
 								Longwalks is an online journal that helps friends and families develop closer relationships, share ideas, and have meaningful conversations. Their team contacted us to redesign their app’s user experience to increase retention and engagement.
 							</p>
-							<div class="revel-down">
+							<div class="revel-bottom">
 								<button class="btn-article">IOS</button>
 								<button class="btn-article">ANDROID</button>
 							</div>
@@ -152,11 +172,11 @@
 				<article class="article3">
 					<a href="#">
 						<div class="aLeft">
-							<h1><img src="./images/telus.png" alt="#telus" class="revel-down"></h1>
-							<p class="revel-down">
+							<h1><img src="./images/telus.png" alt="#telus" class="revel-bottom"></h1>
+							<p class="revel-bottom">
 								We were approached by Telus to build a digital kiosk expeience for the new Telus sky building in Calgary, Canada. We designed the kiosk system to help employees find conference rooms, navigate the building seamlessly, and improve engagement.
 							</p>
-							<div class="revel-down">
+							<div class="revel-bottom">
 								<button class="btn-article">WEB</button>
 								<button class="btn-article">DIGITAL KIOSK</button>
 							</div>
@@ -171,11 +191,11 @@
 				<article class="article4">
 					<a href="#">
 						<div class="aLeft">
-							<h1><img src="./images/adobe.png" alt="#telus" class="revel-down"></h1>
-							<p class="revel-down">
+							<h1><img src="./images/adobe.png" alt="#telus" class="revel-bottom"></h1>
+							<p class="revel-bottom">
 								We were approached by Telus to build a digital kiosk expeience for the new Telus sky building in Calgary, Canada. We designed the kiosk system to help employees find conference rooms, navigate the building seamlessly, and improve engagement.
 							</p>
-							<div class="revel-down">
+							<div class="revel-bottom">
 								<button class="btn-article">WEB</button>
 								<button class="btn-article">IOS</button>
 							</div>
@@ -188,7 +208,7 @@
 				</article>
 			</div>
 
-			<div class="contac-article-box">
+			<div class="contac-article-box revel-bottom">
 				<button class="contact-us"><a href="#">CONTACT US</a></button>
 				<div class="view-all">
 					<a href="#">
@@ -203,35 +223,38 @@
 			</div>
 		</section>
 
-		<hr>
+		<div class="separator-line"></div>
 
 		<section class="clients-section">
-			<h3><span>Trusted by</span><br>
-				Awesomeone clients
-			</h3>
-			<div>
-				<p>
+			<div class="revel-bottom">
+				<div class="trusted"><span>Trusted by</span> <br />
+					Awesomeone clients
+				</div>
+			</div>
+
+			<div class="notTo-box revel-bottom">
+				<p class="notTo">
 					Not to brag, but a lot of hot startup and market <br>
 					leader reach out & touch base to commission our work
 				</p> 
 			</div>
 
-			<div>
-				<div>
+			<div class="images-box">
+				<div class="small-logo" style="backgound-color: red;">
 					<img src="./images/adobe.png" alt="logo-adobe">
 				</div>
-				<div>
+				<div class="small-logo">
 					<img src="./images/talent.png" alt="logo-talent">
 				</div>
-				<div>
+				<div class="small-logo">
 					<img src="./images/telus.png" alt="logo-telus">
 				</div>
-				<div>
+				<div class="small-logo">
 					<img src="./images/logwalk.png" alt="logo-longWalk">
 				</div>
 			</div>
 
-			<div>
+			<div class="smile-box">
 				<img src="./images/plus.svg" alt="+">
 				<div>
 					<img src="./images/smile.gif" alt="smile"><!-- 
@@ -239,6 +262,9 @@
 				</div>
 			</div>
 		</section>
+
+		<div class="separator-line"></div>
+
 
 
 		<section class="services-section">
@@ -266,158 +292,168 @@
 
 		<section class="why-orizon">
 			<div>
-				<h3>Why orizon</h3>
-				<img src="./images/member.png" alt="orizon-member">
-			</div>
+				<div>
+					<h3><span>Why</span> <span class="deuxieme">orizon</span></h3>
+				</div>
 
-			<div>
-				<article>
-					<div>
-						<img src="./images/visage.svg" alt="#person">
-						<h5>Commited to puting smiles on people's faces</h5>
-					</div>
-					<p>
-						desing is our biggest passion. We use it to make client and thier end users smile greating great product
-						that have positive impact
-					</p>
-				</article>
+				<div class="img-workers-box">
+					<img src="./images/member.png" alt="orizon-member">
+				</div>
 
-				<article>
-					<div>
-						<img src="./images/app.svg" alt="#application">
-						<h5>Commited to puting smiles on people's faces</h5>
+				<div class="slider-container">
+					<div class="slider-box">
+						<div>
+							<img src="./images/visage.svg" alt="#visage" class="app">
+							<h3>Modifier la taile de ce visage sans aucun problème</h3>
+						</div>
+						<p>
+							desing is our biggest passion. We use it to make client and thier end users smile greating great product
+							that have positive impact
+						</p>
 					</div>
-					<p>
-						desing is our biggest passion. We use it to make client and thier end users smile greating great product
-						that have positive impact
-					</p>
-				</article>
-				<article>
-					<div>
-						<img src="./images/calendar.svg" alt="#calender">
-						<h5>Commited to puting smiles on people's faces</h5>
-					</div>
-					<p>
-						desing is our biggest passion. We use it to make client and thier end users smile greating great product
-						that have positive impact
-					</p>
-				</article>
 
-				<article>
-					<div>
-						<img src="./images/wold.svg" alt="#wold">
-						<h5>Commited to puting smiles on people's faces</h5>
+					<div class="slider-box">
+						<div>
+							<img src="./images/app.svg" alt="#application" class="app">
+							<h3>Commited to puting smiles on people's faces</h3>
+						</div>
+						<p>
+							desing is our biggest passion. We use it to make client and thier end users smile greating great product
+							that have positive impact
+						</p>
 					</div>
-					<p>
-						desing is our biggest passion. We use it to make client and thier end users smile greating great product
-						that have positive impact
-					</p>
-				</article>
+					<div class="slider-box">
+						<div>
+							<img src="./images/calendar.svg" alt="#calender" class="app">
+							<h3>Commited to puting smiles on people's faces</h3>
+						</div>
+						<p>
+							desing is our biggest passion. We use it to make client and thier end users smile greating great product
+							that have positive impact
+						</p>
+					</div>
 
-				<article>
-					<div>
-						<img src="./images/start.svg" alt="#wold">
-						<h5>Commited to puting smiles on people's faces</h5>
+					<div class="slider-box">
+						<div>
+							<img src="./images/wold.svg" alt="#wold" class="app">
+							<h3>Commited to puting smiles on people's faces</h3>
+						</div>
+						<p>
+							desing is our biggest passion. We use it to make client and thier end users smile greating great product
+							that have positive impact
+						</p>
 					</div>
-					<p>
-						desing is our biggest passion. We use it to make client and thier end users smile greating great product
-						that have positive impact
-					</p>
-				</article>
+
+					<div class="slider-box">
+						<div>
+							<img src="./images/start.svg" alt="#wold" class="app">
+							<h3>Commited to puting smiles on people's faces</h3>
+						</div>
+						<p>
+							desing is our biggest passion. We use it to make client and thier end users smile greating great product
+							that have positive impact
+						</p>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<section class="reviews">
-			<h3><span>Reviews</span>Word's on the street</h3>
 
-			<div class="top-box">
-				<article>
-					<img src="./images/person1.png" alt="person1">
-					<div>
-						<img src="./images/quotation-marks.png" alt="">
+			<h3 class="revel-bottom"><span>Reviews</span> Word's on the street</h3>
+
+			<div class="top-boxv">
+				<div class="person-view">
+					<div class="img-box">
+						<img src="./images/person1.png" alt="person1">
+					</div>
+					<div class="details">
+						<div>
+							<img src="./images/quotation-marks.png" alt="">
+						</div>
 						<p>
 							The Orizon team a) has been an absolute pleasure to work with and b) done exceptional work. We gave them an impossible deadline, and even with that, they gave us more optionality, design iterations and degrees of freedom than could be reasonably asked for!
 						</p>
 						<div>
 							<div>
-								<span>Bryan Johnson</span><br>
-								Founder at <span>Kernel, Venmo, Braintree, OS Fund</span>
-							</div>
-							<div>
-								<img src="./images/go-left.png" alt="<-">
-								<img src="./images/go-right.png" alt="->">
+								<p class="person-desc">
+									<span>Bryan Johnson</span><br>
+									Founder at <span>Kernel, Venmo, Braintree, OS Fund</span>
+								</p>
 							</div>
 						</div>
 					</div>
-				</article>
-				<article>
-					<img src="./images/person2.png" alt="person2">
-					<div>
-						<img src="./images/quotation-marks.png" alt="">
+				</div>
+				<div class="person-view">
+					<div class="img-box">
+						<img src="./images/person2.png" alt="person2">
+					</div>
+					<div class="details">
+						<div>
+							<img src="./images/quotation-marks.png" alt="">
+						</div>
 						<p>
-							The Orizon team a) has been an absolute pleasure to work with and b) done exceptional work. We gave them an impossible deadline, and even with that, they gave us more optionality, design iterations and degrees of freedom than could be reasonably asked for!
+							ere', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
 						</p>
 						<div>
-							<div>
-								<span>Bryan Johnson</span><br>
+						    <p class="person-desc">
+						    	<span>Bryan Johnson</span><br>
 								Founder at <span>Kernel, Venmo, Braintree, OS Fund</span>
-							</div>
-							<div>
-								<img src="./images/go-left.png" alt="<-">
-								<img src="./images/go-right.png" alt="->">
-							</div>
+							</p>	
 						</div>
 					</div>
-				</article>
-				<article>
-					<img src="./images/person3.png" alt="person3">
-					<div>
-						<img src="./images/quotation-marks.png" alt="">
+				</div>
+				<div class="person-view">
+					<div class="img-box">
+						<img src="./images/person3.png" alt="person3">
+					</div>
+					<div class="details">
+						<div>
+							<img src="./images/quotation-marks.png" alt="">
+						</div>
 						<p>
-							The Orizon team a) has been an absolute pleasure to work with and b) done exceptional work. We gave them an impossible deadline, and even with that, they gave us more optionality, design iterations and degrees of freedom than could be reasonably asked for!
+							Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
 						</p>
 						<div>
-							<div>
+							<p class="person-desc">
 								<span>Bryan Johnson</span><br>
 								Founder at <span>Kernel, Venmo, Braintree, OS Fund</span>
-							</div>
-							<div>
-								<img src="./images/go-left.png" alt="<-">
-								<img src="./images/go-right.png" alt="->">
-							</div>
+							</p>
 						</div>
 					</div>
-				</article>
-				<article>
-					<img src="./images/person4.png" alt="person4">
-					<div>
-						<img src="./images/quotation-marks.png" alt="">
+				</div>
+				<div class="person-view">
+					<div class="img-box">
+						<img src="./images/person4.png" alt="person4">
+					</div>
+					<div class="details">
+						<div>
+							<img src="./images/quotation-marks.png" alt="">
+						</div>
 						<p>
-							The Orizon team a) has been an absolute pleasure to work with and b) done exceptional work. We gave them an impossible deadline, and even with that, they gave us more optionality, design iterations and degrees of freedom than could be reasonably asked for!
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It hasLorem Ipsum is simply dummy text of the printing and typesetting industry.
 						</p>
 						<div>
-							<div>
+							<p class="person-desc">
 								<span>Bryan Johnson</span><br>
 								Founder at <span>Kernel, Venmo, Braintree, OS Fund</span>
-							</div>
-							<div>
-								<img src="./images/go-left.png" alt="<-">
-								<img src="./images/go-right.png" alt="->">
-							</div>
+							</p>
 						</div>
 					</div>
-				</article>
+				</div>
 			</div>
 
-			<div class="botton-box">
-				<div>
-					<span>Need help with a project?</span><br>
-					<span>Let’s talk!</span>
+			<div class="bottom-boxv">
+				<div class="bgc">
+					<p class="revel-bottom">
+						<span>Need help with a project?</span>
+						<span>Let’s talk!</span>
+					</p>
 				</div>
 				<p>
 					Get support on a large platform, flesh out your first MVP, go from concept to investment, or take your startup to the next level. Our process wraps around your unique business needs.
 				</p>
-				<button>contact us</button>
+				<button class="contact-us revel-top" style="margin: 0 auto;"><a href="#">CONTACT US</a></button>
 			</div>
 		</section>
 	</main>
@@ -425,7 +461,9 @@
 	<footer>
 		
 		<div class="left">
-			<img src="./images/logo.svg" alt="LOGO" class="logo">
+			<div>
+				<img src="./images/logo.svg" alt="LOGO" class="logo">
+			</div>
 			<ul>
 				<li class="item"><a href="">Home</a></li>
 				<li class="item"><a href="">About</a></li>
@@ -446,13 +484,18 @@
 			</ul>
 
 			<div>
-				<p>© 2021 Orizon. All Rights Reserved</p>
-				<p><img src="./images/5ff4f3f3c5090648ef9699e2_map pin.svg" alt="localisation">Montreal, canada</p>
+				<p>
+					<span class="droit">© 2021 Orizon. All Rights Reserved</span>
+					<img src="./images/5ff4f3f3c5090648ef9699e2_map pin.svg" alt="localisation">Montreal, canada
+				</p>
 			</div>
 		</div>
 	</footer>
 
-	
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 	<script src="./script.js"></script>
 </body>
 </html>

@@ -66,11 +66,29 @@ elementToObservate.forEach(elt => {
 // cette fonction me permet de définir le premier caroucel de la page d'acceuil
 
 
-$('.slider').slick({
-	dots: true,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  cssEase: 'linear'
-});
+const carousselMaker = () => {
+
+	$('.slider-container').slick({
+		dots: true,
+	  slidesToShow: 2,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 4000,
+	  cssEase: 'linear'
+	});
+
+	$('.top-boxv').slick({
+		autoplay: true,
+	  dots: true,
+	  infinite: true,
+	  speed: 500,
+	  fade: true,
+	  cssEase: 'linear'
+	});
+
+}
+
+
+window.onload = function() {
+	carousselMaker()
+}
