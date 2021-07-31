@@ -62,10 +62,19 @@ elementToObservate.forEach(elt => {
 	observer.observe(elt); //selection de tous les l'éléments à observer(cible)
 })
 
+// cette fonction permet de faire en sorte quel élément suit le curseur dans ça direction
+
+const cursor = document.querySelector('.cursor');
+
+
+const cursorEffect = (event) => {
+	cursor.style.top = event.pageY + "px";
+	cursor.style.left = event.pageX + "px";
+};
+window.addEventListener("mousemove", cursorEffect);
+
 
 // cette fonction me permet de définir le premier caroucel de la page d'acceuil
-
-
 const carousselMaker = () => {
 
 	$('.slider-container').slick({
@@ -92,3 +101,8 @@ const carousselMaker = () => {
 window.onload = function() {
 	carousselMaker()
 }
+
+$('.article1').tilt({
+    glare: true,
+    maxGlare: .1
+})
