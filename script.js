@@ -37,8 +37,8 @@ window.onscroll = function(event) {
 
 
 
-
-const handleDisplay = (entrie, observer) =>  { //méthode à exécuter une fois le ratio d'intersection est atteind
+//méthode à exécuter une fois le ratio d'intersection est atteind
+const handleDisplay = (entrie, observer) =>  { 
 	entrie.forEach(entry => {
 		if(entry.intersectionRatio > ratio){
 			entry.target.classList.add("revel-visible");
@@ -57,15 +57,13 @@ const options = { //configuration de l'observateur
 const observer = new IntersectionObserver(handleDisplay, options); //création de l'observateur observer
 
 const elementToObservate = document.querySelectorAll(".revel-bottom, .revel-top, .revel-right");
-console.log(elementToObservate);
+
 elementToObservate.forEach(elt => {
 	observer.observe(elt); //selection de tous les l'éléments à observer(cible)
 })
 
 // cette fonction permet de faire en sorte quel élément suit le curseur dans ça direction
-
 const cursor = document.querySelector('.cursor');
-
 
 const cursorEffect = (event) => {
 	cursor.style.top = event.pageY + "px";

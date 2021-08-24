@@ -19,12 +19,17 @@ body{
 }
 
 .head-site{
-	width: 64%;
+	width: 100%;
 	margin: 27px auto 0 auto;
+	/*background: #fbfbfe;*/
+	background: red;
+	position: relative;
+}
+
+.banner-menu{
+	background: orange;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	background: #fbfbfe;
+	align-items: center;
 }
 
 .rigth-head{
@@ -39,9 +44,24 @@ body{
 	height: 48px;
 	padding: 5px 10px;
 	background: #2b00d4;
-	color: white;
+	color: red;
 	border: 0;
 	outline: 0;
+	position: absolute !important;
+	right: 21% !important;
+}
+
+.box{
+	background: #fff;
+	width: 50px;
+	height: 45px;
+	box-shadow: 2px 2px 4px gray;
+	position: fixed;
+	right: 16%;
+	z-index: 11;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .contact-us a{
@@ -70,18 +90,7 @@ body{
 	background-position: 75% 0%;
 }
 
-.box{
-	background: #fff;
-	width: 50px;
-	height: 45px;
-	box-shadow: 2px 2px 4px gray;
-	position: fixed;
-	right: 250px;
-	z-index: 11;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+
 
 label[for="check-menu"]{
 	width: 28px;
@@ -135,8 +144,9 @@ label[for="check-menu"]{
 }
 
 .logo-box{
-	margin-top: 20px;
 	width: 200px;
+	position: relative;
+	left: 20%;
 }
 
 .logo{
@@ -204,6 +214,9 @@ main{
 	height: 650px;
 	float: right;
 	margin-top: 90px;
+	background-image: url("./images/5f3e86ec1b7ab671f36ebd22_5d27a41e529b677f4874f349_Group 3.png");
+	background-repeat: no-repeat;
+	background-position: 100% 0;
 }
 
 .head-content .left{
@@ -379,7 +392,7 @@ main{
 	height: 530px;
 	margin-top: 140px;
 	padding-left: 50px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	transform: all 100s;
 }
 
@@ -394,6 +407,7 @@ main{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	width: 50%;
 }
 
 .aRigth{
@@ -401,6 +415,14 @@ main{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 50%;
+	background: red
+}
+
+article img{
+	width: 100%;
+	height: 70%;
+	height: auto;
 }
 
 .article-container article a .aLeft p{
@@ -435,7 +457,7 @@ main{
 .img-article4{
 	position: relative;
 	top: 150px;
-	width: 700px !important;
+	width: 100% !important;
 	height: auto;
 }
 
@@ -500,10 +522,7 @@ main{
 	height: auto;
 }
 
-article img{
-	width: 600px;
-	height: auto;
-}
+
 
 .contac-article-box{
 	height: 350px;
@@ -565,9 +584,13 @@ article img{
 	margin: 0 auto 0 auto;
 }
 
-.images-box div img{
+/*.images-box div img{
 	width: 170px;
 	height: 45px;
+}*/
+
+.small-logo img{
+	width: 33.3%;
 }
 
 .small-logo{
@@ -869,6 +892,69 @@ footer li:first-child{
 }
 
 /*--------------------------media-query------------------------------*/
+
+@media screen and (max-width: 1364px){
+
+	.head-content{
+		width: 100%;
+		padding-left: 8%;
+	}
+
+	.presentation-section{
+		width: 90%;
+		padding-left: 0;
+	}
+
+	.article-container{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.aRigth{
+		width: 60%;
+	}
+
+	.aLeft{
+		width: 40%;
+	}
+
+
+/*	article img{
+		display: none;
+	}*/
+}
+
+@media screen and (max-width: 1180px){
+	.head-content .left strong {
+		width: 500px;
+		font-size: 45px;
+	}
+
+	.clients-section .trusted, .reviews h3{
+		font-size: 45px;
+	}
+}
+
+@media screen and (max-width : 1000px){
+	.head-content{
+		height: 900px;
+		flex-direction: column-reverse;
+	}
+
+
+
+	.contact-us{
+		display: none;
+	}
+
+	.box{
+		right: 10%;
+	}
+
+	.logo-box{
+		left: 10%;
+	}
+}
 
 @media screen and (max-width : 750px){
 	.page-menu{
