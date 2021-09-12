@@ -95,6 +95,8 @@ const carousselMaker = () => {
 
 }
 
+console.log(typeof Array(10))
+
 
 window.onload = function() {
 	carousselMaker()
@@ -104,3 +106,4 @@ $('.article1').tilt({
     glare: true,
     maxGlare: .1
 })
+

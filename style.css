@@ -16,6 +16,7 @@ body{
 	font-family: Avertastd,sans-serif;
 	background: #fbfbfe;
 	font-family: Arial, sans-serif !important;
+	overflow-x: hidden;
 }
 
 .head-site{
@@ -416,7 +417,6 @@ main{
 	justify-content: center;
 	align-items: center;
 	width: 50%;
-	background: red
 }
 
 article img{
@@ -891,6 +891,10 @@ footer li:first-child{
 	margin-left: 0;
 }
 
+/*.slick-track{
+	width: 100% !important;
+}
+*/
 /*--------------------------media-query------------------------------*/
 
 @media screen and (max-width: 1364px){
@@ -905,6 +909,10 @@ footer li:first-child{
 		padding-left: 0;
 	}
 
+	.reviews{
+		width: 90%;
+	}
+
 	.article-container{
 		margin-left: auto;
 		margin-right: auto;
@@ -916,6 +924,10 @@ footer li:first-child{
 
 	.aLeft{
 		width: 40%;
+	}
+
+	.clients-section{
+		width: 90%;
 	}
 
 
@@ -932,6 +944,35 @@ footer li:first-child{
 
 	.clients-section .trusted, .reviews h3{
 		font-size: 45px;
+	}
+
+	.slider-box div h3{
+		font-size: 20px;
+		line-height: 22px;
+		padding-left: 8px;
+	}
+
+	.app{
+		width: 50px !important; 
+	}
+
+	.slider-box p{
+		font-size: 17px;
+		line-height: 25px;
+	}
+
+	.person-view .slick-slide .slick-current .slick-active{
+		display: block;
+	}
+
+	.slick-track{
+		overflow: hidden;
+	}
+
+	footer{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
 	}
 }
 
@@ -954,11 +995,65 @@ footer li:first-child{
 	.logo-box{
 		left: 10%;
 	}
+
+	footer{
+		flex-direction: column;
+		justify-content: center;
+
+	}
+
+	footer .right, footer .left{
+		margin: 80px auto 0 auto;
+	}
 }
 
 @media screen and (max-width : 750px){
 	.page-menu{
 		width: 100%;
+	}
+
+	.article-container article {
+		overflow: visible;
+		height: auto;
+		padding: 15px;
+		padding-bottom: 0px;
+	}
+	.article-container article a{
+		display: block;
+	}
+
+	.aLeft{
+		width: 100%;
+		margin-bottom: 35px;
+	}
+
+	.aRigth{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		background: transparent;
+	}
+
+	.aRigth > img{
+		max-height: 350px;
+		max-width: auto;
+	}
+/*
+	.btn-article{
+		display: none;
+	}*/
+
+	.img-article1, .img-article2, .img-article3, .img-article4{
+		position: initial;
+	}
+
+	.presentation-section, .article-container{
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	.head-content{
+		margin-top: 10px;
 	}
 }
 
